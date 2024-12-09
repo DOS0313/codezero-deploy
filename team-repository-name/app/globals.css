@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'HakgyoansimDunggeunmiso';
+  src: url('/fonts/HakgyoansimDunggeunmisoTTF-B.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.logo-font {
+  font-family: 'HakgyoansimDunggeunmiso', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
